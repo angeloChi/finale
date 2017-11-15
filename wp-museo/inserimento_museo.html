@@ -1,0 +1,39 @@
+<!--Questa pagina mostra il form da compilare -->
+<!DOCTYPE html
+    Author: Angelo
+    Version: 1.0
+    Description: form per inserire un museo>
+
+<html>
+	<head>
+		<title>Inserimento museo</title>
+		<meta charset="utf-8">
+		
+	</head>
+	<body class="insert-m">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script type="text/javascript" src = "inserimento.js"></script>
+		
+			<form id = "form_insert" name = "form_museo" method = "post" action = "" >
+				<div class = "container" id = "risposta"></div>
+				Nome*:<br/>
+				<input type="text" name = "nome_museo" id = "nome_museo"><br/>
+				Localita'*:<br/>
+				<input type="text" name = "localita_museo" id="localita_museo" ><br/>
+				Indirizzo*:<br/>
+				<input type="text" name = "indirizzo_museo" id="indirizzo_museo" ><br/>
+				Cap*:<br/>
+				<input type="text" name = "cap_museo" id = "cap_museo"><br/>
+				Orario apertura:<br/>
+				<input type="time" name = "orario_apertura_museo" id = "orario_apertura_museo"><br/>
+				Orario chiusura:<br/>
+				<input type="time" name = "orario_chiusura_museo"  id = "orario_chiusura_museo"><br/>
+				Descrizione:<br/>
+				<textarea name="descrizione_museo" rows="10" cols="40" id = "descrizione_museo"></textarea><br/>
+				Email:<br/>
+				<input type="email" name = "email_museo" id = "email_museo"><br/>
+				<input type="submit" id = "invia" name = "invia" value="Invia">
+				<input type="reset" value="Resetta">
+			</form>
+	</body>
+</html>
